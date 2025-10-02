@@ -1,0 +1,25 @@
+.login-container {
+  position: relative;
+  min-height: calc(100vh - 82px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  inset: 0; 
+  background: rgba(245, 239, 239, 0.2);
+  z-index: 1;
+}
+
+.login-container > * {
+  position: relative;
+  z-index: 2;
+}
